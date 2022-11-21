@@ -1,12 +1,17 @@
-﻿using System;
+﻿using Y09.Energy.Gateway.Stw.PurtelApi.Actions;
 
-namespace Y09.Energy.Gateway.Stw.PurtelApi
+namespace Y09.Energy.Gateway.Stw.PurtelApi;
+
+
+/// <summary>
+/// Programm starten 
+/// </summary>
+internal class Program
 {
-    internal class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+
+        //Call console mamagement
+        Factory.ConsoleStart();
     }
 }
