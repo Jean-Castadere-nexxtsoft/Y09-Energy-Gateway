@@ -6,8 +6,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Interfaces\IMapper.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="12.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Factory\" />
   </ItemGroup>
 
 </Project>

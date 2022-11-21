@@ -3,7 +3,7 @@ using Y09.Energy.Gateway.Stw.PurtelApi.Services;
 
 namespace Y09.Energy.Gateway.Stw.PurtelApi.Actions;
 
-static class Factory
+static class Show
 {
 
     /// <summary>

@@ -25,7 +25,7 @@ class ApiService
         _initApiModel = Helpers.InitApplication.InitApi();
 
         //TODO : to test
-        Factory.ConsoleTest(_initApiModel.Gateway);
+        Show.ConsoleTest(_initApiModel.Gateway);
 
         return valRet;
 
