@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Y09.Energy.Gateway.Stw.PurtelApi.Dtos
+namespace Y09.Energy.Gateway.Stw.PurtelApi.Dtos.Targets
 {
     /// <summary>
     /// create contract model to json
     /// </summary>
-    internal class CreateContractJson
+    internal class CreateContractJSON
     {
 
         //Required
@@ -29,7 +29,7 @@ namespace Y09.Energy.Gateway.Stw.PurtelApi.Dtos
         public string haus_nr { get; set; }
         public string zusatz { get; set; }
         public string ot { get; set; }
-        
+
         public int max_channels { get; set; }
         public int max_channels_vertrag { get; set; }
         public int max_numbers { get; set; }

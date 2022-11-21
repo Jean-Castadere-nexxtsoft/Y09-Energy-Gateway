@@ -1,4 +1,6 @@
-﻿using Y09.Energy.Gateway.Stw.PurtelApi.Actions;
+﻿using AutoMapper;
+using Y09.Energy.Gateway.Stw.PurtelApi.Actions;
+using Y09.Energy.Gateway.Stw.PurtelApi.Dtos.Targets;
 
 namespace Y09.Energy.Gateway.Stw.PurtelApi;
 
@@ -12,6 +14,25 @@ internal class Program
     {
 
         //Call console mamagement
-        Factory.ConsoleStart();
+        //Factory.ConsoleStart();
+
+
+        //TODO: move code
+        //Initialize the mapper
+        var config = new MapperConfiguration(cfg => cfg.CreateMap<ChangeContractCVS, ChangeContractJSON>());
+
+        ChangeContractCVS ChangeContractMapped = new ChangeContractCVS
+        {
+            anrede = 1,
+            vorname = "Jean",
+            nachname = "Castadere"
+        };
+
+        //Using automapper
+        var mapper = new Mapper(config);
+        var ChangeContractDTO = mapper.Map<ChangeContractJSON>(ChangeContractMapped);
+
+
+
     }
 }

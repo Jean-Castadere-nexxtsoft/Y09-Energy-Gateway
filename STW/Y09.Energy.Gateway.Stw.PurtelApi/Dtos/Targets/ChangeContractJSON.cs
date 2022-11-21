@@ -1,9 +1,9 @@
-﻿namespace Y09.Energy.Gateway.Stw.PurtelApi.Dtos
+﻿namespace Y09.Energy.Gateway.Stw.PurtelApi.Dtos.Targets
 {
     /// <summary>
     /// Change contrat model to Json
     /// </summary>
-    internal class ChangeContractJson
+    internal class ChangeContractJSON
     {
 
         public int anrede { get; set; }
@@ -102,7 +102,7 @@
         public int kredit { get; set; }
         public int ip_eingeschraenkt { get; set; }
         public int kundenart { get; set; }
-   
+
         public int anrede2 { get; set; }
         public string vorname2 { get; set; }
         public string nachname2 { get; set; }
